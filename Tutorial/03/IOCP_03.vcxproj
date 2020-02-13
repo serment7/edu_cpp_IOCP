@@ -84,12 +84,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Define.h" />
-    <ClInclude Include="EchoServer.h" />
-    <ClInclude Include="IOCPServer.h" />
+    <ClInclude Include="Network\Define.h" />
+    <ClInclude Include="Network\IOCompletionPort.h" />
+    <ClInclude Include="Network\IOCPServer.h" />
+    <ClInclude Include="Network\Network.h" />
+    <ClInclude Include="Network\Packet.h" />
+    <ClInclude Include="Network\Session.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="Util\delegateLib\Delegate.h" />
+    <ClInclude Include="Util\delegateLib\DelegateBase.h" />
+    <ClInclude Include="Util\delegateLib\MultiCastDelegate.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Network\IOCompletionPort.cpp" />
+    <ClCompile Include="Network\Network.cpp" />
+    <ClCompile Include="Network\Packet.cpp" />
+    <ClCompile Include="Network\Session.cpp" />
+    <ClCompile Include="Server.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
