@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Network\IOCompletionPort.cpp" />
+    <ClCompile Include="Network\Network.cpp" />
+    <ClCompile Include="Network\Packet.cpp" />
+    <ClCompile Include="Network\Session.cpp" />
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Network\Define.h" />
+    <ClInclude Include="Network\IOCPServer.h" />
+    <ClInclude Include="Network\IOCompletionPort.h" />
+    <ClInclude Include="Network\Network.h" />
+    <ClInclude Include="Network\Packet.h" />
+    <ClInclude Include="Network\Session.h" />
+    <ClInclude Include="Util\delegateLib\Delegate.h" />
+    <ClInclude Include="Util\delegateLib\DelegateBase.h" />
+    <ClInclude Include="Util\delegateLib\MultiCastDelegate.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="ServerCommandDefine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ServerNetwork">
+      <UniqueIdentifier>{1fc0f584-76ea-4096-9ebc-805fceb35389}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+  </ItemGroup>
+</Project>
